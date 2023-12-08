@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body> 
+  <header>
+    <h1> ANALIZADOR DE TEXTO</h1>
+  </header>
+  <textarea name="user-input"  cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+  <button type="reset" id="reset-button">Limpiar caja</button>
+
+  <ul>
+    <li data-testid="word-count">RECUENTO DE PALABRAS</li>
+    <li data-testid="character-count">RECUENTO DE CARACTERES</li>
+    <li data-testid="character-no-spaces-count">RECUENTO DE CARACTERES EXCLUEYENDO ESPACIOS Y SIGNOS DE PUNTUACIÓN</li>
+    <li data-testid="number-count">RECUENTO DE NÚMEROS</li>
+    <li data-testid="number-sum">SUMA TOTAL DE NÚMEROS</li>
+    <li data-testid="word-length-average">LONGITUD MEDIA DE PALABRAS</li>
+  </ul>
+
+
+  <footer><p>GLADIS DANILU FARILL CASIANO</p></footer>
+
+
   <script src="index.js" type="module"></script>
 </body>
 </html>

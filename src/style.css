@@ -1,0 +1,109 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(40deg, #ff00ff, #33ffd4);
+}
+h1 {
+    font-size: 28px;
+    color: blueviolet;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;/*quitar el punto*/
+    /*darle estilos a las filas por individual*/
+}
+/*
+--padding-top, padding-right, padding-bottom y padding-left
+--10px arriba, 5 a la derecha, 10 abajo y 6 a la izquierda
+---border-width: 2px;
+    --border-style: dashed;
+    border-color: aqua; o en vez de las tres se sustituye con border y se ponen las tres obligatorias*/
+    /*margin-top, margin-right, margin-bottom y margin-left*/
+[data-testid=word-count] {
+    color: bisque;   
+    background-color: cadetblue;
+    padding: 10px;
+    border: 2px dashed aqua;
+    margin: 10px 50% 10px 0;
+    font-weight: 400;    
+}
+[data-testid=character-count] {
+    color: rgb(218, 185, 145);   
+    background-color: rgb(70, 114, 116);
+    padding: 10px;
+    border: 2px dashed rgb(123, 255, 0);
+    margin: 10px 50% 10px 0;
+    font-weight: 400;
+}
+[data-testid=character-no-spaces-count] {
+    color: rgb(201, 255, 196);   
+    background-color: rgb(27, 75, 75);
+    padding: 10px;
+    border: 2px dashed rgb(0, 255, 128);
+    margin: 10px 20% 10px 0;
+    font-weight: 400;
+}
+[data-testid=number-count] {
+    color: rgb(209, 95, 165);   
+    background-color: rgb(103, 156, 206);
+    padding: 10px;
+    border: 2px dashed rgb(47, 0, 255);
+    margin: 10px 50% 10px 0;
+    font-weight: 400;
+}
+[data-testid=number-sum] {
+    color: rgb(238, 189, 129);   
+    background-color: cadetblue;
+    padding: 10px;
+    border: 2px dashed aqua;
+    margin: 10px 50% 10px 0;
+    font-weight: 400;
+}
+[data-testid=word-length-average] {
+    color: rgb(226, 132, 115);   
+    background-color: rgb(118, 95, 160);
+    padding: 10px;
+    border: 2px dashed rgb(140, 0, 255);
+    margin: 10px 50% 10px 0;
+    font-weight: 400;
+}
+footer {
+    border: 8px;
+    text-align: end;
+    font-size: 22px;
+    font-family: jokerman;
+    color: aqua;
+}
+[name] {
+    border-radius: 10px;
+    color: rgb(22, 51, 51);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+    font-weight: 800;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgba(121, 227, 235, 0.5);
+    border-color: black;
+    border-width: 3px;
+    overflow: auto;
+/*falta centrar el cuadro de texto*/
+}
+#reset-button {
+    background: cyan;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    border-radius: 8px;
+    font-weight: 600;
+    border-color: azure;
+    margin: 20px;
+    height: 40px;
+    width: 30%;
+}
