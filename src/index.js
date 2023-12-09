@@ -1,16 +1,18 @@
 import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-const input = document.getElementsByName("user-input");
 const button = document.getElementById("reset-button");
+const input = document.querySelector("textarea[name='user-input']");
+//const input = document.getElementById("user-input");
+button.addEventListener("click",reseText);
 
-button.addEventListener("click",reset);
-
-
-function reset() {
-    input.value="";
-    console.log(input);
+function reseText() {
+    input.value ="";
 }
+
+//const textInput = 
+
+
 /*function time() {
     console.log("hola");    
 }

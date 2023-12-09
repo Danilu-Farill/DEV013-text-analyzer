@@ -92,18 +92,21 @@ footer {
     background-color: rgba(121, 227, 235, 0.5);
     border-color: black;
     border-width: 3px;
-    overflow: auto;
-/*falta centrar el cuadro de texto*/
+    /*para mover la caja al centro y poder jalarla(resize)*/
+    display: flex;
+    margin: 0 auto;
+    resize: both;
 }
 #reset-button {
     background: cyan;
     font-size: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: block;
     border-radius: 8px;
     font-weight: 600;
     border-color: azure;
     margin: 20px;
     height: 40px;
     width: 30%;
+    display: block;
+    margin: 0 auto;
 }
