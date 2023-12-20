@@ -4,17 +4,14 @@ const analyzer = {
     return  word;
   },
   getCharacterCount: (text) => {
-    let character = text.length;//cuenta los caracteres con espacio
+    let character = text.length;
     return character;
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro 
-    /*let noSpace = letras;
-    console.log(noSpace.replace(/\s+/g, '').length);//sin espacio
-    console.log(noSpace.split(" ").join("").length);//sin espacio*/
     //Falta excluir signos
     let noSpace = text.split(" ").join("").length;
+    const noSpaceReplace = text.match(/[a-z]+/g);
+    console.log(noSpaceReplace);
     return noSpace;
   },
   getAverageWordLength: (text) => {    
@@ -25,18 +22,19 @@ const analyzer = {
     return lengthMedium;
   },
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
     let matchNumber = /(\d+)/g;
-    console.log(matchNumber);
-    return text.match(matchNumber).length;
+    let matchLength = text.match(matchNumber).length;//los lee pero 
+    return matchLength;
   },
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    console.log(text);
+    const replaceString= /(\d+)/g;
+    const deleteLetter = text.match(replaceString);
+    console.log(deleteLetter);
     let counter = 0;
-    //for (let index = 0; index < text.length; index++) {
-      //if()
-   // }
+    for(let index =0; index < deleteLetter.length; index++){
+    counter+= parseInt(deleteLetter[index]);
+    }
+   return counter;
   },
 };
 

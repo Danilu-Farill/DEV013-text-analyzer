@@ -14,13 +14,14 @@ input.addEventListener("keyup", showText);
 
 function reseText() {
     input.value ="";
-    wordCount. innerHTML += "";
-    wordLengthAverage.innerHTML += "" ;
-    characterCount.innerHTML += "";
-    characterNoSpacesCount.innerHTML += "";
-    numberCount.innerHTML += "";
-    numberSum.innerHTML += "";
+    wordCount.innerHTML = wordCountPlaceHolder;
+    wordLengthAverage.innerHTML = wordLengthAveragePlaceHolder;
+    characterCount.innerHTML = characterCountPlaceHolder;
+    characterNoSpacesCount.innerHTML = characterNoSpacesCountPlaceHolder;
+    numberCount.innerHTML = numberCountPlacerHolder;
+    numberSum.innerHTML = numberSumPlaceHolder;
 }
+
 let wordCountPlaceHolder = wordCount.innerHTML;
 let characterCountPlaceHolder = characterCount.textContent;
 let characterNoSpacesCountPlaceHolder = characterNoSpacesCount.innerHTML;
