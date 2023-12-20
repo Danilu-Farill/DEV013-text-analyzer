@@ -1,10 +1,10 @@
 const analyzer = {  
   getWordCount: (text) => {
-    let word = text.split(" ").length;
+    const word = text.split(" ").length;
     return  word;
   },
   getCharacterCount: (text) => {
-    let character = text.length;
+    const character = text.length;
     return character;
   },
   getCharacterCountExcludingSpaces: (text) => {
@@ -18,12 +18,12 @@ const analyzer = {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     /*let longitud = character/word;
     console.log(longitud);/*///RECTIFICAR
-    let lengthMedium =  text.split(" ").join("").length/text.split(" ").length;
+    const lengthMedium =  text.split(" ").join("").length/text.split(" ").length;
     return lengthMedium;
   },
   getNumberCount: (text) => {
-    let matchNumber = /(\d+)/g;
-    let matchLength = text.match(matchNumber).length;//los lee pero 
+    const matchNumber = /(\d+)/g;
+    const matchLength = text.match(matchNumber).length;//los lee pero 
     return matchLength;
   },
   getNumberSum: (text) => {

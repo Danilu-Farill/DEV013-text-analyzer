@@ -21,15 +21,12 @@ function reseText() {
     numberCount.innerHTML = numberCountPlacerHolder;
     numberSum.innerHTML = numberSumPlaceHolder;
 }
-
-let wordCountPlaceHolder = wordCount.innerHTML;
-let characterCountPlaceHolder = characterCount.textContent;
-let characterNoSpacesCountPlaceHolder = characterNoSpacesCount.innerHTML;
-let wordLengthAveragePlaceHolder = wordLengthAverage.innerHTML; 
-let numberCountPlacerHolder = numberCount.innerHTML;
-let numberSumPlaceHolder = numberSum.innerHTML;
-
-
+const wordCountPlaceHolder = wordCount.innerHTML;
+const characterCountPlaceHolder = characterCount.textContent;
+const characterNoSpacesCountPlaceHolder = characterNoSpacesCount.innerHTML;
+const wordLengthAveragePlaceHolder = wordLengthAverage.innerHTML; 
+const numberCountPlacerHolder = numberCount.innerHTML;
+const numberSumPlaceHolder = numberSum.innerHTML;
 function showText(valor) {
     wordCount.innerHTML = wordCountPlaceHolder + analyzer.getWordCount(valor.target.value);
     characterCount.textContent = characterCountPlaceHolder + analyzer.getCharacterCount(valor.target.value);
@@ -38,8 +35,6 @@ function showText(valor) {
     numberCount.innerHTML = numberCountPlacerHolder + analyzer.getNumberCount(valor.target.value);
     numberSum.innerHTML = numberSumPlaceHolder + analyzer.getNumberSum(valor.target.value);
 }
-
-
 /*function showText(valor) {//con esto me aparece lo que voy a escribiendo pero se repiten las letras
     //analyzer.getCharacterCount(valor.target.value);
     characterCount.textContent = characterCountPlaceHolder + analyzer.getCharacterCount(valor.target.value);
