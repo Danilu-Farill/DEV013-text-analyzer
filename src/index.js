@@ -10,31 +10,33 @@ const numberSum = document.querySelector("[data-testid= 'number-sum']");
 const wordLengthAverage = document.querySelector("[data-testid= 'word-length-average']");
 
 button.addEventListener("click",reseText);
-input.addEventListener("keyup", showText);
+input.addEventListener("input", showText);//cambie key up por input
 
 function reseText() {
     input.value ="";
-    wordCount.innerHTML = wordCountPlaceHolder;
-    wordLengthAverage.innerHTML = wordLengthAveragePlaceHolder;
-    characterCount.innerHTML = characterCountPlaceHolder;
-    characterNoSpacesCount.innerHTML = characterNoSpacesCountPlaceHolder;
-    numberCount.innerHTML = numberCountPlacerHolder;
-    numberSum.innerHTML = numberSumPlaceHolder;
+    wordCount.innerHTML = "RECUENTO DE PALABRAS: ";
+    wordLengthAverage.innerHTML = "LONGITUD MEDIA DE PALABRAS: ";
+    characterCount.innerHTML = "RECUENTO DE CARACTERES: ";
+    characterNoSpacesCount.innerHTML = "RECUENTO DE CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACIÓN: ";
+    numberCount.innerHTML = "RECUENTO DE NÚMEROS: ";
+    numberSum.innerHTML = "SUMA TOTAL DE NÚMEROS: ";
 }
-const wordCountPlaceHolder = wordCount.innerHTML;
-const characterCountPlaceHolder = characterCount.textContent;
-const characterNoSpacesCountPlaceHolder = characterNoSpacesCount.innerHTML;
+//const wordCountPlaceHolder = wordCount.innerHTML;
+//const characterCountPlaceHolder = characterCount.textContent;
+//const characterNoSpacesCountPlaceHolder = characterNoSpacesCount.innerHTML;
 const wordLengthAveragePlaceHolder = wordLengthAverage.innerHTML; 
-const numberCountPlacerHolder = numberCount.innerHTML;
+//const numberCountPlacerHolder = numberCount.innerHTML;
 const numberSumPlaceHolder = numberSum.innerHTML;
+
 function showText(valor) {
-    wordCount.innerHTML = wordCountPlaceHolder + analyzer.getWordCount(valor.target.value);
-    characterCount.textContent = characterCountPlaceHolder + analyzer.getCharacterCount(valor.target.value);
-    characterNoSpacesCount.innerHTML = characterNoSpacesCountPlaceHolder + analyzer.getCharacterCountExcludingSpaces(valor.target.value);
-    wordLengthAverage.innerHTML = wordLengthAveragePlaceHolder + analyzer.getAverageWordLength(valor.target.value);
-    numberCount.innerHTML = numberCountPlacerHolder + analyzer.getNumberCount(valor.target.value);
-    numberSum.innerHTML = numberSumPlaceHolder + analyzer.getNumberSum(valor.target.value);
+    wordCount.innerHTML = "RECUENTO DE PALABRAS: " + analyzer.getWordCount(valor.target.value);
+    characterCount.textContent = input.innerHTML + "RECUENTO DE CARACTERES: " + analyzer.getCharacterCount(valor.target.value);
+    characterNoSpacesCount.innerHTML = input.innerHTML + "RECUENTO DE CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACIÓN: " + analyzer.getCharacterCountExcludingSpaces(valor.target.value);
+    wordLengthAverage.innerHTML = input.innerHTML + wordLengthAveragePlaceHolder + analyzer.getAverageWordLength(valor.target.value);
+    numberCount.innerHTML = input.innerHTML + "RECUENTO DE NÚMEROS: " + analyzer.getNumberCount(valor.target.value);
+    numberSum.innerHTML = input.innerHTML + numberSumPlaceHolder + analyzer.getNumberSum(valor.target.value);
 }
+
 /*function showText(valor) {//con esto me aparece lo que voy a escribiendo pero se repiten las letras
     //analyzer.getCharacterCount(valor.target.value);
     characterCount.textContent = characterCountPlaceHolder + analyzer.getCharacterCount(valor.target.value);

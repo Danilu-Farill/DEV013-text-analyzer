@@ -22,7 +22,8 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "@playwright/test": "^1.33.0",
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.5",
     "acorn": "^8.8.2",
     "babel-jest": "^27.0.1",
     "css": "^3.0.0",
