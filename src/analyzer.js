@@ -8,35 +8,37 @@ const analyzer = {
     return character;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //const noSpace = text.split(" ").join("").length;
     const noSpaceReplace = text.match(/[A-Za-z0-9]+/g);
     if (noSpaceReplace === noSpaceReplace) {
-      const noPunctuationMarks = noSpaceReplace.join("").length;      
+      const noPunctuationMarks = noSpaceReplace.join("").length;   
       return noPunctuationMarks;
     }
   },
   getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    //la longitud caracteres sin espacios/numero de palabras
-    /*let longitud = character/word;
-    console.log(longitud);/*///RECTIFICAR
-    const lengthMedium =  text.split(" ").join("").length/text.split(" ").length;
+    const character = text.split(" ").join("").length;
+    const word = text.split(" ").length;
+    const lengthMedium = character/word;
     return lengthMedium;
   },
   getNumberCount: (text) => {
-    const matchNumber = /(\d+)/g;
-    const matchLength = text.match(matchNumber).length;//los lee pero 
-    return matchLength;
+    const matchLength = text.match(/[0-9]+/g);
+      if (matchLength) {
+        return matchLength.length; 
+      }else {
+        return 0;
+      }
   },
   getNumberSum: (text) => {
-    const replaceString= /(\d+)/g;
-    const deleteLetter = text.match(replaceString);
-    //console.log(deleteLetter);
+    const matchLength = text.match(/[0-9]+/g);
     let counter = 0;
-    for(let index =0; index < deleteLetter.length; index++){
-    counter+= parseFloat(deleteLetter[index]);
-    }
-   return counter;
+   if (matchLength) {
+     for(let index =0; index < matchLength.length; index++){
+      counter+= parseFloat(matchLength[index]);
+      }
+     return counter;
+   }else {
+    return 0;
+   }
   },
 };
 
