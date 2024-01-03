@@ -13,22 +13,22 @@ button.addEventListener("click",reseText);
 input.addEventListener("input", showText);//cambie key up por input
 
 function reseText() {
-    input.value ="";
-    wordCount.innerHTML = "RECUENTO DE PALABRAS: ";
-    wordLengthAverage.innerHTML = "LONGITUD MEDIA DE PALABRAS: ";
-    characterCount.innerHTML = "RECUENTO DE CARACTERES: ";
-    characterNoSpacesCount.innerHTML = "RECUENTO DE CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACIÓN: ";
-    numberCount.innerHTML = "RECUENTO DE NÚMEROS: ";
-    numberSum.innerHTML = "SUMA TOTAL DE NÚMEROS: ";
+  input.value ="";
+  wordCount.innerHTML = "RECUENTO DE PALABRAS: ";
+  wordLengthAverage.innerHTML = "LONGITUD MEDIA DE PALABRAS: ";
+  characterCount.innerHTML = "RECUENTO DE CARACTERES: ";
+  characterNoSpacesCount.innerHTML = "RECUENTO DE CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACIÓN: ";
+  numberCount.innerHTML = "RECUENTO DE NÚMEROS: ";
+  numberSum.innerHTML = "SUMA TOTAL DE NÚMEROS: ";
 }
 const wordLengthAveragePlaceHolder = wordLengthAverage.innerHTML; 
 const numberSumPlaceHolder = numberSum.innerHTML;
 
 function showText(valor) {
-    wordCount.innerHTML = "RECUENTO DE PALABRAS: " + analyzer.getWordCount(valor.target.value);
-    characterCount.textContent = input.innerHTML + "RECUENTO DE CARACTERES: " + analyzer.getCharacterCount(valor.target.value);
-    characterNoSpacesCount.innerHTML = input.innerHTML + "RECUENTO DE CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACIÓN: " + analyzer.getCharacterCountExcludingSpaces(valor.target.value);
-    wordLengthAverage.innerHTML = input.innerHTML + wordLengthAveragePlaceHolder + analyzer.getAverageWordLength(valor.target.value);
-    numberCount.innerHTML = input.innerHTML + "RECUENTO DE NÚMEROS: " + analyzer.getNumberCount(valor.target.value);
-    numberSum.innerHTML = input.innerHTML + numberSumPlaceHolder + analyzer.getNumberSum(valor.target.value);
+  wordCount.innerHTML = "RECUENTO DE PALABRAS: " + analyzer.getWordCount(valor.target.value);
+  characterCount.textContent = input.innerHTML + "RECUENTO DE CARACTERES: " + analyzer.getCharacterCount(valor.target.value);
+  characterNoSpacesCount.innerHTML = input.innerHTML + "RECUENTO DE CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACIÓN: " + analyzer.getCharacterCountExcludingSpaces(valor.target.value);
+  wordLengthAverage.innerHTML = input.innerHTML + wordLengthAveragePlaceHolder + analyzer.getAverageWordLength(valor.target.value);
+  numberCount.innerHTML = input.innerHTML + "RECUENTO DE NÚMEROS: " + analyzer.getNumberCount(valor.target.value);
+  numberSum.innerHTML = input.innerHTML + numberSumPlaceHolder + analyzer.getNumberSum(valor.target.value);
 }
