@@ -1,5 +1,4 @@
 # BIENVENIDO A TEXT ANALIZER
-###:tw-1f4bb:
 
 ## Instrucciones
 
