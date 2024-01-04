@@ -30,7 +30,7 @@ const analyzer = {
         suma++;
       }
     }
-    return suma;
+    return suma; 
   },
   getNumberSum: (text) => {
     const splitNumber = text.split(" ");
