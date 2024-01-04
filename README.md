@@ -32,5 +32,17 @@ Aqui trabaje el JS con modulos, en este apartado se llama al input donde se va a
 ***ANALYZER.JS***
 Esta es el segundo archivo del JS con modulos, aquí me encargue de hacer que las funciones hicieran lo que requiere la aplicación, el conteo de palabras, caraccteres, números, etc.
 
+### Diseño
+
+Para el diseño del analizador use como fondo la combinación de dos colores que me gusto el como se combinan entre ellos, para el título utilice un color y tamaño que fuera más grande y llamativo que lo demás para que resaltara el proposito de esta página.
+
+**El cuadro** tiene en el interior de un texto que indica donde escribir y que se borra cuando el usuario empieza a escribir, el cuadro tiene las esquinas redondeadas solo un poco para que no afecte al texto interno, el cuadro se puede agrandar o hacer pequeño a voluntad del usuario, el fondo del cuadro es un poco degradado para que no se vea muy fuerte y el texto es un color oscuro para distinguirlo.
+
+El botón de **limpiar caja** tiene un color más fuerte para que lo noten con facilidad, puse el puntero del mouse como manita para que se distinga donde dar clic.
+
+Las líneas donde se encuentran los nombres de lo que contabiliza el texto estan en color morado con transparencia para no afectar la visibilidad de los números que se van mostrando, con borde redondeado que no afecta el contenido.
+
+**En el pie de página** coloqué mi nombre a la derecha para que no afecta la atención de lo demás, con opacidad para no resaltar demasiado, que solo se vea sutil.
+
 #### ¿Dónde puede abrirse?
 Esta aplicación es apta para usarse en cualquier navegador, ya sea firefox, chrome, edge, safari y para abrirlo en cualquier aparato electrónico, computadora, laptop, telefono, celular.

@@ -17,10 +17,9 @@ li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 20px;
     color: black;   
-    background-color: rgb(85, 34, 223); 
+    background-color: rgba(85, 34, 223, 0.6); 
     list-style: none;
     font-style: italic;
-    font-weight: 800;
 }
 /*
 --padding-top, padding-right, padding-bottom y padding-left
@@ -35,7 +34,7 @@ li {
 }
 .word {
     padding: 10px;
-    margin: 10px 50% 10px 0;
+    margin: 10px 46% 10px 0;
 }
 
 [data-testid=character-no-spaces-count] {
@@ -43,19 +42,7 @@ li {
     padding: 10px;
     margin: 10px 46% 10px 0;
 }
-/*
-.number-count {// rgb(209, 95, 165)
-    padding: 10px;
-    margin: 10px 50% 10px 0;
-}
-.number-sum {
-    padding: 10px;
-    margin: 10px 50% 10px 0;
-}
-.word-length-average {
-    padding: 10px;
-    margin: 10px 50% 10px 0;
-}*/
+
 footer {
     border: 8px;
     text-align: end;
@@ -67,7 +54,7 @@ footer {
 }
 textarea[name="user-input"] {
     border-radius: 10px;
-    color: rgb(22, 51, 51);
+    color: rgb(4, 5, 5);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     flex-wrap: wrap;
@@ -93,6 +80,6 @@ textarea[name="user-input"] {
     height: 40px;
     width: 30%;
     display: block;
-    margin: 0 auto;
+    margin: 4px auto;
     cursor: pointer;
 }
