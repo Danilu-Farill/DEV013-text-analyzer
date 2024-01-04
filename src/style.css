@@ -93,4 +93,5 @@ textarea[name="user-input"] {
     width: 30%;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
