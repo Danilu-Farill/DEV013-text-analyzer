@@ -20,6 +20,7 @@ li {
     background-color: rgb(85, 34, 223); 
     list-style: none;
     font-style: italic;
+    font-weight: 800;
 }
 /*
 --padding-top, padding-right, padding-bottom y padding-left
