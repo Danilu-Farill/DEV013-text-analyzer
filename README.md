@@ -18,6 +18,8 @@
 
 + **Longitud media de las palabras**, aquí en el texto se suman los caracteres sin espacio y se dividen por la cantidad de palabras, ejemplo: _hola mundo(da 4.5)_.
 
+![analizador con el texto](text-analyzer2.jpg)
+
 ### Archivos utilizados
 
 ***STYLE.CSS***
