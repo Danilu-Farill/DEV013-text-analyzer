@@ -10,7 +10,7 @@ const numberSum = document.querySelector("[data-testid= 'number-sum']");
 const wordLengthAverage = document.querySelector("[data-testid= 'word-length-average']");
 
 button.addEventListener("click",reseText);
-input.addEventListener("input", showText);//cambie key up por input
+input.addEventListener("input", showText);
 
 function reseText() {
   input.value ="";
